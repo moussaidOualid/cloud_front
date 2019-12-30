@@ -10,4 +10,4 @@ RUN npm install && \
 FROM nginx:alpine
 
 COPY --from=builder /app/dist/* /usr/share/nginx/html/
-CMD ng serve --host 0.0.0.0
+CMD ng serve --host 0.0.0.0 --port 4200
